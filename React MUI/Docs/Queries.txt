@@ -1,0 +1,3 @@
+What is the difference between package.json and package-lock.json?
+
+What is the utility of type script in React JS?
