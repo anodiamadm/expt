@@ -1,8 +1,30 @@
 npx create-react-app react-mui-demo --template typescript
 
 npm install @mui/material @emotion/react @emotion/styled
-
 npm install @mui/icons-material
+
+rafc = react arrow functional component
+
+import { Typography, Button, Stack, IconButton } from '@mui/material'
+import SendIcon from '@mui/icons-material/Send';
+
+<Typography variant='h1-6/subtitle1-2,/body1-2' component='h1' gutterBottom>Some Text</Typography>
+<Stack spacing={4}>
+  <Stack spacing={2} direction='row'>
+    <Button variant='text/contained/outlined' color='primary/secondary/error/info/warning/success' href='https://google.com'>Text</Button>
+    <Button variant='contained' startIcon/endIcon={<SendIcon/>} disableRipple disableElevation>Send</Button>
+    <IconButton aria-label='send'(accessibility) color='success' size=small><SendIcon/></IconButton>
+  </Stack>
+  <Stack display='block' spacing={2} direction='row'>
+    <Button variant='text/contained/outlined' size='small/medium/large'>Text</Button>
+  </Stack>
+</Stack>
+
+App.css: .App { padding: 4rem; }
+
+mui.com > Customization > Default Theme
+mui.com > Customization > Palette
+
 
 
 
