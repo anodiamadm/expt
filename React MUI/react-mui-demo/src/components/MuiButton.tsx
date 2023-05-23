@@ -8,8 +8,8 @@ import { useState } from 'react'
 const MuiButton = () => {
     const [formats, setFormats] = useState<string[]>([])
     console.log({formats});
-    const handleFormatChange = (_event: React.MouseEvent<HTMLElement>, updatedFormats1: string[]) => {
-        setFormats(updatedFormats1)
+    const handleFormatChange = (_event: React.MouseEvent<HTMLElement>, updatedFormats: string[]) => {
+        setFormats(updatedFormats)
     }
     /* If we need only one option from toggle button groups to be active */
     // const [formats, setFormats] = useState<string | null>(null)
