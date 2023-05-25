@@ -9,7 +9,10 @@ import './App.css';
 // import MuiSwitch from './components/MuiSwitch';
 // import MuiRating from './components/MuiRating';
 // import MuiAutoComplete from './components/MuiAutoComplete';
-import MuiLayout from './components/MuiLayout';
+// import MuiLayout from './components/MuiLayout';
+// import MuiCard from './components/MuiCard';
+// import MuiAccordion from './components/MuiAccordion';
+import MuiImageList from './components/MuiImageList';
 
 function App() {
   return (
@@ -24,7 +27,10 @@ function App() {
       {/* <MuiSwitch/> */}
       {/* <MuiRating/> */}
       {/* <MuiAutoComplete/> */}
-      <MuiLayout/>
+      {/* <MuiLayout/> */}
+      {/* <MuiCard/> */}
+      {/* <MuiAccordion/> */}
+      <MuiImageList/>
     </div>
   );
 }
