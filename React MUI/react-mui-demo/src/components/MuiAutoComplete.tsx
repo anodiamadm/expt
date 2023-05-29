@@ -6,7 +6,10 @@ type Skill = {
     label: string
 }
 
-const skills = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React']
+const skills = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React',
+                'MySQL','Oracle','FireBase','C++','Java',
+                'HTML1', 'CSS1', 'JavaScript1', 'TypeScript1', 'React1',
+                'MySQL1','Oracle1','FireBase1','C++1','Java1']
 // For Auto complete with objects {id, label} declare the skilOptions ovject outside the functional component to avoid unnecessary warnings
 const skillOptions = skills.map((skill, index)=>({
     id: index + 1,
