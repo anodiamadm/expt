@@ -1,3 +1,6 @@
 18/05/2023: Material UI: https://www.youtube.com/watch?v=BHEPVdfBAqE&list=PLC3y8-rFHvwh-K9mDlrrcDywl7CeVL2rO&index=1
 
+Carousel : https://www.youtube.com/watch?v=_GTw7U41WI4
+
 Prerequisites: HTML, CSS, Javascript, React, MUI V5
+
