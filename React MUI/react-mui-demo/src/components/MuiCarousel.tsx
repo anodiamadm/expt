@@ -1,56 +1,20 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Paper,CardMedia,Typography } from '@mui/material';
 import Carousel from "react-material-ui-carousel";
 
 const MuiCarousel = () => {
-  // State to programmatically set active child
-  const [activeChild, setActiveChild] = useState(0);
-
-  //const onChangeCarousel = (videoIndex)=>{alert(videoIndex)};
-
-  // Basically items = [1, 2, 3, 4]
-  const items = useMemo(() => ["https://www.youtube.com/embed/muuK4SpRR5M",
-                               "https://www.youtube.com/embed/AVn-Yjr7kDc",
-               "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"], []);
-
-  // The Keypress Event Handler
-  const changeChild = useCallback(
-    (e:any) => {
-      if (e.key === "ArrowLeft") {
-        // If supposed previous child is < 0 set it to last child
-        setActiveChild((a) => (a - 1 < 0 ? items.length - 1 : a - 1));
-      } else if (e.key === "ArrowRight") {
-        // If supposed next child is > length -1 set it to first child
-        setActiveChild((a) => (a + 1 > items.length - 1 ? 0 : a + 1));
-      }
-    },
-    [items]
-  );
-
-  // Set and cleanup the event listener
-  useEffect(() => {
-    document.addEventListener("keydown", changeChild);
-
-    return function cleanup() {
-      document.removeEventListener("keydown", changeChild);
-    };
-  });
-
+  const items = ["https://www.youtube.com/embed/muuK4SpRR5M",
+                 "https://www.youtube.com/embed/AVn-Yjr7kDc"];
   return (
     <Paper sx={{ width:'400px', height:'300px'}}>
-      <Carousel
-        index={activeChild} // <-- This controls the activeChild
-        // autoPlay={true} // <-- You probaly want to disable this for our purposes
-        navButtonsAlwaysVisible
-        height={300}
-        // next={onChangeCarousel(activeChild)}
-      >
+      <Carousel navButtonsAlwaysVisible height={300} onChange={()=>{console.log('Carousel Changed');
+      }}>
         {items.map((i) => {
           return (
             <Typography align="center" key={i}>
-              <CardMedia
-                component="iframe" src={i}  height={300} 
-              />  
+              <CardMedia 
+                component="iframe" image={i} title="abcd" height={300}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              />
             </Typography>
           );
         })}
@@ -61,14 +25,40 @@ const MuiCarousel = () => {
 
 export default MuiCarousel;
 
-// import React from 'react'
+  // State to programmatically set active child
+  // const [activeChild, setActiveChild] = useState(0);
+  //const onChangeCarousel = (videoIndex)=>{alert(videoIndex)};
 
-// const MuiCarousel = () => {
-//   return (
-//     <div>
-      
-//     </div>
-//   )
-// }
+  // Basically items = [1, 2, 3, 4]
 
-// export default MuiCarousel
+
+
+  // The Keypress Event Handler
+  // const changeChild = useCallback(
+  //   (e:any) => {
+  //     if (e.key === "ArrowLeft") {
+  //       // If supposed previous child is < 0 set it to last child
+  //       setActiveChild((a) => (a - 1 < 0 ? items.length - 1 : a - 1));        
+  //     } else if (e.key === "ArrowRight") {
+  //       // If supposed next child is > length -1 set it to first child
+  //       setActiveChild((a) => (a + 1 > items.length - 1 ? 0 : a + 1));
+  //     }
+  //     console.log('Active Child: ', activeChild);
+  //   },
+  //   [items, activeChild]
+  // );
+
+  // Set and cleanup the event listener
+  // useEffect(() => {
+  //   document.addEventListener("keydown", changeChild);
+
+  //   return function cleanup() {
+  //     document.removeEventListener("keydown", changeChild);
+  //   };
+  // });
+
+        // index={activeChild} // <-- This controls the activeChild
+        // autoPlay={true} // <-- You probaly want to disable this for our purposes
+
+
+                // next={onChangeCarousel(activeChild)}
