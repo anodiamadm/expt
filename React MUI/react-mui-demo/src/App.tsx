@@ -1,9 +1,10 @@
 import './App.css';
-import { createTheme, colors,ThemeProvider } from '@mui/material'
-import MuiButton from './components/MuiButton';
-import MuiSelect from './components/MuiSelect';
-import MuiTextField from './components/MuiTextField';
-import MuiTypography from './components/MuiTypography';
+import { createTheme, ThemeProvider } from '@mui/material'
+
+// import MuiButton from './components/MuiButton';
+// import MuiSelect from './components/MuiSelect';
+// import MuiTextField from './components/MuiTextField';
+// import MuiTypography from './components/MuiTypography';
 // import MuiRadioButton from './components/MuiRadioButton';
 // import MuiCheckbox from './components/MuiCheckbox';
 // import MuiSwitch from './components/MuiSwitch';
@@ -24,7 +25,8 @@ import MuiTypography from './components/MuiTypography';
 // import MuiList from './components/MuiList';
 // import MuiChip from './MuiChip';
 // import MuiResponsiveness from './components/MuiResponsiveness';
-import MuiSkeleton from './components/MuiSkeleton';
+// import MuiSkeleton from './components/MuiSkeleton';
+import MuiCarousel from './components/MuiCarousel';
 
 function App() {
     const theme = createTheme({
@@ -50,10 +52,10 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <div className="App">
-                <MuiTypography />
-                <MuiButton />
-                <MuiTextField/>
-                <MuiSelect/>
+                {/* <MuiTypography /> */}
+                {/* <MuiButton /> */}
+                {/* <MuiTextField/> */}
+                {/* <MuiSelect/> */}
                 {/* <MuiMultiSelect/> */}
                 {/* <MuiRadioButton/> */}
                 {/* <MuiCheckbox/> */}
@@ -75,7 +77,8 @@ function App() {
                 {/* <MuiList/> */}
                 {/* <MuiChip/> */}
                 {/* <MuiResponsiveness/> */}
-                <MuiSkeleton/>
+                {/* <MuiSkeleton/> */}
+                <MuiCarousel/>
             </div>
         </ThemeProvider>
     );
