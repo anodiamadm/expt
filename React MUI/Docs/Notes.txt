@@ -1,7 +1,16 @@
 18/05/2023: Material UI: https://www.youtube.com/watch?v=BHEPVdfBAqE&list=PLC3y8-rFHvwh-K9mDlrrcDywl7CeVL2rO&index=1
 
+Npm Install Swiper: https://www.youtube.com/watch?v=UH5HZOtTNb4
+https://www.npmjs.com/package/swiper
+https://swiperjs.com/get-started
+
+
 Carousel : https://www.youtube.com/watch?v=_GTw7U41WI4
 https://smartdevpreneur.com/four-examples-of-material-ui-cardmedia/
+
+3D Swiper Slider Image Carousel: https://www.youtube.com/watch?v=ekrQhBiX0x8
+
+
 
 Prerequisites: HTML, CSS, Javascript, React, MUI V5
 

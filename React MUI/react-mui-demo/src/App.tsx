@@ -26,7 +26,8 @@ import { createTheme, ThemeProvider } from '@mui/material'
 // import MuiChip from './MuiChip';
 // import MuiResponsiveness from './components/MuiResponsiveness';
 // import MuiSkeleton from './components/MuiSkeleton';
-import MuiCarousel from './components/MuiCarousel';
+// import MuiCarousel from './components/MuiCarousel';
+import SwiperDemo from './components/SwiperDemo';
 
 function App() {
     const theme = createTheme({
@@ -78,7 +79,8 @@ function App() {
                 {/* <MuiChip/> */}
                 {/* <MuiResponsiveness/> */}
                 {/* <MuiSkeleton/> */}
-                <MuiCarousel/>
+                {/* <MuiCarousel/> */}
+                <SwiperDemo/>
             </div>
         </ThemeProvider>
     );

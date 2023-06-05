@@ -2,21 +2,22 @@ import { Paper,CardMedia,Typography } from '@mui/material';
 import Carousel from "react-material-ui-carousel";
 
 const MuiCarousel = () => {
-  const items = [
-    { key: 0, url:'https://www.youtube.com/embed/muuK4SpRR5M', text: 'Lorem ipsum' }, 
-    { key: 1, url:'https://www.youtube.com/embed/AVn-Yjr7kDc', text: 'Ipsum ipsum' },
-    { key: 2, url:'https://www.youtube.com/embed/WNk6LZFJN2k', text: 'Lorem Lorem' }, 
-    { key: 3, url:'https://www.youtube.com/embed/UgfsbL-uHOA', text: 'Ipsum Lorem' }
-  ];
+  const items = ["https://www.youtube.com/embed/muuK4SpRR5M",
+                 "https://www.youtube.com/embed/AVn-Yjr7kDc"];
+
+  const handleChange=()=>{
+    const video = document.querySelector("#iframe");
+    
+    console.log('changed',video?.id);
+  }
+
   return (
     <Paper sx={{ width:'400px', height:'300px'}}>
-      <Carousel navButtonsAlwaysVisible height={300}>
-        {items.map((item) => {
+      <Carousel navButtonsAlwaysVisible height={300} onChange={handleChange} >
+        {items.map((i) => {
           return (
-            <Typography align="center" key={item.key}>
-              <CardMedia 
-                component="iframe" image={item.url} title="abcd" height={200}
-              />
+            <Typography align="center" key={i}>
+              <CardMedia id={i} component="iframe" src={i} height={300} />
             </Typography>
           );
         })}
