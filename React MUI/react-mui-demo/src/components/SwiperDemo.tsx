@@ -8,21 +8,29 @@ import "../styles.css";
 import Typography from "@mui/material/Typography";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import anodiam1 from '../assets/anodiam-1.png';
+import anodiam2 from '../assets/anodiam-2.png';
+import anodiam3 from '../assets/anodiam-3.png';
+import anodiam4 from '../assets/anodiam-4.png';
+import anodiam5 from '../assets/anodiam-5.png';
+import anodiam6 from '../assets/anodiam-6.png';
+import anodiam7 from '../assets/anodiam-7.png';
+import anodiam8 from '../assets/anodiam-8.png';
 
 export default function SwiperDemo() {
     const sliderNews = [
-        { key: 0, linkUrl:'https://www.youtube.com/embed/muuK4SpRR5M', slideImage:'https://picsum.photos/200', text: 'Lorem ipsum' }, 
-        { key: 1, linkUrl:'https://www.youtube.com/embed/AVn-Yjr7kDc', slideImage:'https://picsum.photos/201', text: 'Ipsum ipsum' },
-        { key: 2, linkUrl:'https://www.youtube.com/embed/WNk6LZFJN2k', slideImage:'https://picsum.photos/202', text: 'Lorem Lorem' }, 
-        { key: 3, linkUrl:'https://www.youtube.com/embed/UgfsbL-uHOA', slideImage:'https://picsum.photos/203', text: 'Ipsum Lorem' },
-        { key: 4, linkUrl:'https://www.youtube.com/embed/muuK4SpRR5M', slideImage:'https://picsum.photos/204', text: 'Lorem ipsum' }, 
-        { key: 5, linkUrl:'https://www.youtube.com/embed/AVn-Yjr7kDc', slideImage:'https://picsum.photos/205', text: 'Ipsum ipsum' },
-        { key: 6, linkUrl:'https://www.youtube.com/embed/WNk6LZFJN2k', slideImage:'https://picsum.photos/206', text: 'Lorem Lorem' }, 
-        { key: 7, linkUrl:'https://www.youtube.com/embed/UgfsbL-uHOA', slideImage:'https://picsum.photos/207', text: 'Ipsum Lorem' }
+        { key: 0, linkUrl:'https://www.youtube.com/embed/muuK4SpRR5M', slideImage: anodiam1, text: 'Lorem ipsum' }, 
+        { key: 1, linkUrl:'https://www.youtube.com/embed/AVn-Yjr7kDc', slideImage: anodiam2, text: 'Ipsum ipsum' },
+        { key: 2, linkUrl:'https://www.youtube.com/embed/WNk6LZFJN2k', slideImage: anodiam3, text: 'Lorem Lorem' }, 
+        { key: 3, linkUrl:'https://www.youtube.com/embed/UgfsbL-uHOA', slideImage: anodiam4, text: 'Ipsum Lorem' },
+        { key: 4, linkUrl:'https://www.youtube.com/embed/muuK4SpRR5M', slideImage: anodiam5, text: 'Lorem ipsum' }, 
+        { key: 5, linkUrl:'https://www.youtube.com/embed/AVn-Yjr7kDc', slideImage: anodiam6, text: 'Ipsum ipsum' },
+        { key: 6, linkUrl:'https://www.youtube.com/embed/WNk6LZFJN2k', slideImage: anodiam7, text: 'Lorem Lorem' }, 
+        { key: 7, linkUrl:'https://www.youtube.com/embed/UgfsbL-uHOA', slideImage: anodiam8, text: 'Ipsum Lorem' }
       ];
     return (
-        <div className="container">
-            <Typography variant='h6'>Welcome to Anodiam</Typography>
+        <div className="container" >
+            <Typography variant='h6' align='center'>Welcome to Anodiam</Typography>
             <Swiper
                 effect={"coverflow"}
                 grabCursor={true}
@@ -49,12 +57,8 @@ export default function SwiperDemo() {
                     </SwiperSlide>
                 ))}
                 <div className="slide-controler">
-                    <div className="swiper-button-prev slider-arrow">
-                        
-                    </div>
-                    <div className="swiper-button-next slider-arrow">
-                        
-                    </div>
+                    <ArrowBackIosIcon className="swiper-button-prev slider-arrow"/>
+                    <ArrowForwardIosIcon className="swiper-button-next slider-arrow"/>
                 </div>           
             </Swiper>
         </div>
