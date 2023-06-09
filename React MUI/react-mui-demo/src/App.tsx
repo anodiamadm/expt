@@ -14,7 +14,7 @@ import { createTheme, ThemeProvider } from '@mui/material'
 // import MuiCard from './components/MuiCard';
 // import MuiAccordion from './components/MuiAccordion';
 // import MuiImageList from './components/MuiImageList';
-// import MuiNavbar from './components/MuiNavbar';
+import MuiNavbar from './components/MuiNavbar';
 // import MuiLink from './components/MuiLink';
 // import MuiBreadcrumbs from './components/MuiBreadcrumbs';
 // import MuiDrawer from './components/MuiDrawer';
@@ -27,7 +27,7 @@ import { createTheme, ThemeProvider } from '@mui/material'
 // import MuiResponsiveness from './components/MuiResponsiveness';
 // import MuiSkeleton from './components/MuiSkeleton';
 // import MuiCarousel from './components/MuiCarousel';
-import SwiperDemo from './components/SwiperDemo';
+// import SwiperDemo from './components/SwiperDemo';
 
 function App() {
     const theme = createTheme({
@@ -67,7 +67,7 @@ function App() {
                 {/* <MuiCard/> */}
                 {/* <MuiAccordion/> */}
                 {/* <MuiImageList/> */}
-                {/* <MuiNavbar/> */}
+                <MuiNavbar/>
                 {/* <MuiLink/> */}
                 {/* <MuiBreadcrumbs/> */}
                 {/* <MuiDrawer/> */}
@@ -80,7 +80,7 @@ function App() {
                 {/* <MuiResponsiveness/> */}
                 {/* <MuiSkeleton/> */}
                 {/* <MuiCarousel/> */}
-                <SwiperDemo/>
+                {/* <SwiperDemo/> */}
             </div>
         </ThemeProvider>
     );
